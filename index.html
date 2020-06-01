@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="game.js"></script>
+        <title>Program the path</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> Guess the number </h1>
+        </header>
+        <main>
+            <div id="game">
+                <h2> The computer has generated a number between 0 and 200.</h2>
+                <h2> You have <span id="guesses-remaining">15</span> tries to guess it!</h2>
+                <form id="form">
+                    <label for="guessed-number">The number you guess is: </label>
+                    <input id="guessed-number" />
+                    <input type="submit"/>
+                </form>
+            </div>
+            <p id="messages-box"></p>
+            <div id="guesses-wrapper">
+                <h3>The numbers you've guessed were:</h3>
+                <ul id="guesses"></ul>
+            </div>
+            <div id="new-game" hidden>
+                <input type="submit" onclick="newGame()" value="New Game"/>
+            </div>
+        </main>
+    </body>
+</html>
